@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Movie Search</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+   
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Movie Search</a>
+        <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" href="#">Help</a>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+          <h2>User Guide :- </h2>
+          <h4> 1. Select search by movie title or IMDB Id.</h4>
+          <h4> 2. At a time you can select any one of them. </h4>
+          <h4> 3. Provide the full name of the movie with proper space between the words.</h4>
+          <h4> 4. Please scroll down after clicking submit button to see the result. </h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Got it. Thanks :-)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+    <div class="container">
+  
+    <form>
+    <div class="form-group">
+    <label for="title1"><h4>Movie Title*</h4></label>
+    <input type="text" class="form-control" id='title' placeholder="Enter movie title" name="title">
+    </div>
+    <button type="submit" id="get-data" class="btn btn-default">Search By Movie Title</button>
+    </form>
+    <br>
+    <h4> OR </h4>
+    <br>
+    <form>
+    <div class="form-group">
+    <label for="imdb"><h4>IMDB Id*</h4></label>
+    <input type="text" class="form-control" id='ID' placeholder="Enter IMDB Id" name="id">
+    </div>
+    <button type="submit" id="get-data1" class="btn btn-default">Search By IMDB Id</button>
+    </form>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+    </header>
+    
+    <br>
+    <br>
+    
+    <section>
+    <div id="showData" class="container">
+    
+    </div>
+    </section>
+
+    <br>
+    <br>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index2.js"></script>
+
+  </body>
+
+</html>
